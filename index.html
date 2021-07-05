@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Time of Day</title>
+    <meta name="robots" content="noindex,nofollow" />
+    <style>
+		* {padding:0; margin:0;}
+		html {background-color:#ccc;}
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			max-width:960px; /* keeps from getting too large on wide screen */
+			width:90%; /* shrink to fit screen */
+			margin:auto; /* center in html element */
+			background-color:#fff;
+			padding:20px;
+			min-height:100%; /* keeps from getting too large on wide screen */
+			}
+		img.flexible {
+			float:right;
+			display:inline-block;
+			padding:20px;
+			max-width:300px; /* actual size of image */
+			width:33%; /* approximate size taken on screen in maximum view */
+		}
+		p {margin:10px;}
+		h1,h2,h3,h4,h5,h6{
+			font-weight:normal;
+			margin:10px;
+			}
+		h1.masthead {margin-top:0;}
+		footer {
+			text-align:center;
+			clear:both; /* ride below all items */
+			}
+		nav{
+			text-align:center; /* centers the nav */
+		}
+		
+		nav ul {
+				list-style:none; /* removes the bullets */
+			}
+		nav ul li
+			{
+				display:inline-block; /* makes horizontal, but able to declare margins */
+				margin:0 2%; /* margin left-right, gets smaller as necessary */
+			}
+		nav a:hover{
+			text-decoration: none;
+		}	
+    </style>
+  </head>
+<body>
+	<header>
+		<h1 class="masthead">Time of Day</h1>
+
+	</header>
+    <main>
+	 <header><h3>A JavaScript example by Mahder Wehabe</h3>
+	<h2 id="greeting">Greeting goes here</h2>
+	</header>
+	<p> This web page uses JavaScript to determine the current hour,
+		 and presents a different image, custom message, 
+		 and color based on each of the following times of day.</p>
+		 <p> 
+           <ul>
+      <li>Morning (5am to 12 noon)</li>
+	 <li>Afternoon (12 noon to 6pm)</li>
+	<li>Evening (6pm to 11pm)</li>
+	<li>Night (11pm to 5am</li>
+		   </ul>
+		 </p>
+	  <img id="pic" src="http://dummyimage.com/300x400" alt="time of day pic" class="flexible" />
+     </main>
+    <footer>
+      <small>&copy; 2020 - <span id="copyright">copyright goes here</span>, All Rights Reserved ~
+      <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~
+      <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
+      </small>
+    </footer>
+  <script>
+    
